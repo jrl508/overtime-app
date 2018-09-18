@@ -9,6 +9,10 @@ module ApplicationHelper
             {
               url: posts_path,
               title: 'Time Entries'
+            },
+            {
+                url: new_post_path,
+                title: 'New Entry'
             }
     
       ]
