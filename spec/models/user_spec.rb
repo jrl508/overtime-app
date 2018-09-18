@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before do
-  @user = User.create(email:"test1@test.com", password:"testtest", password_confirmation:"testtest", first_name:"Bruce", last_name:"Wayne" )
+  @user = FactoryBot.create(:user)
     end
   describe "creation" do
 
