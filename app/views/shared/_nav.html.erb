@@ -8,10 +8,15 @@
 
     <li class="nav-item dropdown ml-md-auto">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Account</a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "TODO: Admin-Dash", root_path, class:'dropdown-item'%>
-            <div class="dropdown-divider"> </div> 
-            <%= link_to "Logout", destroy_user_session_path, method: :delete ,class:'dropdown-item'%>
-        </div>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <% if current_user.try(:type) == 'AdminUser'  %>    
+                <li>
+                    <%= link_to "Admin Dashboard", admin_root_path, class:'dropdown-item'%>
+                <li class="dropdown-divider"> </li> 
+            <% end %>
+                <li>    
+                    <%= link_to "Logout", destroy_user_session_path, method: :delete ,class:'dropdown-item'%>
+                </li>
+        </ul>
     </li>
 </ul>
