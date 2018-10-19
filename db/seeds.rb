@@ -7,8 +7,8 @@ puts "1 Admin User created"
 
 puts "1 User created"
 
-100.times do |post|
+20.times do |post|
 	Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id)
 end
 
-puts "100 Posts have been created"
+puts "20 Posts have been created"
