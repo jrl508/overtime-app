@@ -16,10 +16,9 @@ x Block non admin and guest users
 - Needs to be documented if employee did not log overtime
 
 ## UI:
-- x Bootstrap -> formattting
+x Bootstrap -> formattting
+- Icons from Font Awesome
+x Update styles for forms
 
 ## Refactor TODOS:
-- Refactor user association integration test in post_spec
 - Refactor posts/_form for admin user with status
--fix post_spec.rb:82 to use factories
--fix post_spec.rb:52 to have the correct user reference and not require update
