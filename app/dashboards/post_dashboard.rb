@@ -14,7 +14,9 @@ class PostDashboard < Administrate::BaseDashboard
     rationale: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    status: Field::Text,
+    status: Field::Select.with_options(
+      collection: ["submitted","approved","rejected"]
+    ),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -48,6 +50,7 @@ class PostDashboard < Administrate::BaseDashboard
     :user,
     :date,
     :rationale,
+    :status,
   ].freeze
 
   # Overwrite this method to customize how posts are displayed
