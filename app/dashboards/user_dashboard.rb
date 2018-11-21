@@ -22,6 +22,7 @@ class UserDashboard < Administrate::BaseDashboard
     type: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    phone: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -42,6 +43,7 @@ class UserDashboard < Administrate::BaseDashboard
     :posts,
     :id,
     :email,
+    :phone,
     :sign_in_count,
     :current_sign_in_at,
     :last_sign_in_at,
@@ -59,6 +61,7 @@ class UserDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :email,
+    :phone,
     :password,
     :first_name,
     :last_name,
