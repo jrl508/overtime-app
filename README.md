@@ -17,4 +17,3 @@ x Block non admin and guest users
 - Needs to be documented if employee did not log overtime
 
 ## TODOS:
-- Integrate validation for phone attr in User
