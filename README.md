@@ -16,10 +16,5 @@ x Block non admin and guest users
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
-## UI:
-x Bootstrap -> formattting
-x Icons from Font Awesome
-x Update styles for forms
-
 ## TODOS:
 - Integrate validation for phone attr in User
