@@ -1,5 +1,10 @@
 module ApplicationHelper
 
+    def admin_types
+        ['AdminUser']
+    end
+    
+
     def nav_items 
         [
             {
