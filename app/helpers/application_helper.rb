@@ -17,7 +17,7 @@ module ApplicationHelper
             },
             {
                 url: new_post_path,
-                title: 'New Entry'
+                title: 'Request Overtime'
             }
     
       ]
