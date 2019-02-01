@@ -308,6 +308,7 @@ DEPENDENCIES
   jquery-rails (~> 4.3, >= 4.3.3)
   kaminari (~> 1.1, >= 1.1.1)
   listen (>= 3.0.5, < 3.2)
+  mail (~> 2.7, >= 2.7.1)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   pundit (~> 2.0)
