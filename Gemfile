@@ -49,3 +49,5 @@ gem 'twilio-ruby', '~> 5.15', '>= 5.15.2'
 gem 'dotenv-rails', '~> 2.5'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'mail', '~> 2.7', '>= 2.7.1'
+
+ruby "2.4.0"
