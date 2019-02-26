@@ -45,7 +45,7 @@ describe 'navigate' do
     it 'has a link from the homepage' do
       visit root_path
 
-      click_link("New Entry")
+      click_link("Request Overtime")
       expect(page.status_code).to eq(200)
     end
   end
